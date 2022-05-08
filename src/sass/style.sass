@@ -1,0 +1,23 @@
+@import 'base/_variables'
+
+*
+    font-family: 'Poppins', sans-serif
+
+.container 
+    width: 1344px
+    padding: 0 40px
+    margin: 0 auto
+
+@media(max-width: 1344px)
+    .container
+        width: 1200px
+@media(max-width: 1200px)
+    .container
+        width: 100%
+@media(max-width: 576px)
+    .container
+        padding: 0 15px
+
+@import 'blocks/_main-screen'
+@import 'blocks/_buttons'
+@import 'blocks/_preview'

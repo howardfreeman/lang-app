@@ -1,0 +1,83 @@
+.main-screen
+    position: relative
+    min-height: 900px
+    padding: 140px 0 72px 0
+    background: url('../img/background.jpg') center (center/cover) no-repeat
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__title
+        font-weight: 600
+        font-size: 46px
+        line-height: 140%
+        color: $text-color
+        margin-top: 40px
+        margin-bottom: 0
+        &-highlight
+            margin: 0
+            transform: skewX(22deg)
+    &__highlight
+        position: relative
+        left: -21px
+        margin-top: 12px
+        background-color: #F7D73B
+        width: 225px
+        height: 62px
+        text-align: center
+        transform: skewX(-22deg)
+    &__descr
+        color: $text-color
+        font-weight: 600
+        font-size: 24px
+        line-height: 150%
+        margin-top: 40px
+        width: 500px
+    &__privacy
+        position: absolute
+        bottom: 72px
+        font-weight: 600
+        font-size: 14px
+        line-height: 140%
+        color: #FFFFFF
+        opacity: 0.8
+        text-decoration: none
+        &:hover
+            color: #FFFFFF
+
+@media(max-width: 1200px)
+    .main-screen
+        padding-top: 120px
+        .logo
+            width: 200px
+        &__title
+            font-size: 36px
+        &__highlight
+            width: 186px
+            height: 50px
+        &__descr
+            font-size: 20px
+            width: 450px
+@media(max-width: 992px)
+    .main-screen
+        padding-top: 80px
+        &__wrapper
+            margin-bottom: 100px
+            flex-direction: column
+@media(max-width: 576px)
+    .main-screen
+        padding-top: 70px
+        .logo
+            width: 160px
+        &__title
+            font-size: 22px
+        &__highlight
+            width: 100px
+            height: 30px
+            left: -5px
+            margin-top: 5px
+        &__descr
+            width: 100%
+            font-size: 14px
+        &__privacy
+            bottom: 50px
+        
