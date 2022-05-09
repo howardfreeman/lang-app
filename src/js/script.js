@@ -10,19 +10,18 @@ $(document).ready(function() {
         items: 1,
         slideBy: 'page',
         autoplay: true,
-        stop: false,
         controls: false,
         nav: false,
         speed: 800,
         autoplayTimeout: 8000
-      });
+    });
     
-      document.querySelector('.prev').onclick = function () {
+    $('.prev').on('click', function() {
         slider.goTo('prev');
-      };
+    });
     
-      document.querySelector('.next').onclick = function () {
+    $('.next').on('click', function() {
         slider.goTo('next');
-      };
+    });
 
 });
